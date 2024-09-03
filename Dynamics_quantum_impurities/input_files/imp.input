@@ -1,7 +1,0 @@
-&imp
-  m_imp_u(1) = 4.002603d0
-  selec_gs_k(1) ="He2S_fci", r_cutoff_gs_k(1) = 3.17502d0, umax_gs_k(1) = 5.800065d2 
-  filerimp_k(1) = 'rimp_1.out.0'
-  selec_gs_k_k(1,1) = "null", r_cutoff_gs_k_k(1,1) = 0.d0, umax_gs_k_k(1,1) = 0.d0
-  fileimpin_k(1) = 'denX_1.0000.dat'
-/
