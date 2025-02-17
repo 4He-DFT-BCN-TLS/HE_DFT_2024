@@ -1,0 +1,30 @@
+&input
+	title   	= 'Pure 4He_5000 droplet'
+ 	nthread		= 5
+	mode    	= 1
+	xmax 		= 57.6d0
+	ymax 		= 57.6d0
+	zmax 		= 57.6d0
+	nx 			= 288
+	ny 			= 288
+	nz 			= 288
+	n4      	= 500
+	xc			= 0.0d0
+	yc			= 0d0
+	zc			= 0d0
+	core4		= 'OTC'
+	Lsolid 		= .true.
+	limp 		= .false.
+	lexternal 	= .false. 	
+	pener		= 200
+	pdenpar		= 5000
+	filedenout 	= 'den.out'
+	niter		= 500000
+	precie		= 1.e-6
+	pafl		= 0.05
+	lpaflv		= .true.
+	nstepp		= 3
+/
+	1000	0.05
+	1000	0.1
+	1000	0.5
