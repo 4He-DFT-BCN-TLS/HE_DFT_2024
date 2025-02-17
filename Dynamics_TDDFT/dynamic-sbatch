@@ -1,0 +1,36 @@
+#!/bin/bash
+
+#SBATCH -N 1                    # use 1 node
+##SBATCH -n 1                    # run 1 MPI task per node
+#SBATCH -c 20
+##SBATCH --mem=30000
+#SBATCH --ntasks-per-core=1     # use 20 cpus per OpenMP task
+#SBATCH --threads-per-core=1    # use 2 OpenMP thread per physical cpu corec (so 40 OpenMP thread$
+#SBATCH --time=150:00:00        # use 300 hours of wall-time
+#SBATCH --mail-user=ernestogarciaalfonso96@gmail.com
+#SBATCH --mail-type=BEGIN,END
+##SBATCH --nodelist=compute-0-42
+#SBATCH --partition skylake,cslake
+
+#SBATCH -J "Ar->Ar@He500"
+
+
+#export OMP_NUM_THREADS=36
+#export MKL_NUM_THREADS=36
+#export OMP_PROC_BIND=true
+#export WORKDIR=$(pwd)
+
+#cd ${WORKDIR}
+
+
+echo "Execution starting"
+#time srun -N 1 -n 1 -c 36 $(placement 1 36) ./4hedft < pure-4he1000.input > pure-4he1000.res 2> pure-4he1000.err
+time ./4hetddft-isotropic < Ar2He500.input > Ar2He500.res 2> Ar2He500.input.err
+date
+echo "Execution finished"
+
+
+
+#jobinfo ${SLURM_JOBID}
+
+
