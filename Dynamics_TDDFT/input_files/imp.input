@@ -1,0 +1,50 @@
+&imp
+  m_imp_u = 2*39.948d0
+
+  rimp(1,1) = 0.0d0,	rimp(1,2) = 0d0,      rimp(1,3) = 50d0
+
+  rimp(2,1) = 0.d0 ,    rimp(2,2) = 0d0,     rimp(2,3)= 0d0
+  
+  vimp(1,1) = 0.0d0,	vimp(1,2) = 0.d0,    vimp(1,3) = -10.0d0
+
+  vimp(2,1) = 0.0d0,  vimp(2,2) = 0.d0,      vimp(2,3) = 0.0d0
+ 
+
+  selec_gs_k = 2*'Ar_He'
+
+  r_cutoff_gs_k = 2*2.25d0
+
+  umax_gs_k = 2*2768.38d0
+
+
+
+  selec_gs_k_k(:,:) = 4*'Ar_Ar'
+
+  r_cutoff_gs_k_k(:,:) = 4*2.85d0
+
+  umax_gs_k_k(:,:) = 4*2480.74d0
+
+
+  drselec_gs_k_k(:,:) = 4*'dr_Ar_Ar'
+
+  drr_cutoff_gs_k_k(:,:) = 4*2.85d0
+
+  drumax_gs_k_k(:,:) = 4*-12278.7d0
+
+
+
+  filerimp_k(1) = 'rimp.out.1.0'
+
+  filevimp_k(1) = 'vimp.out.1.0'
+
+  fileaimp_k(1) = 'aimp.out.1.0'
+
+  filerimp_k(2) = 'rimp.out.2.0'
+
+  filevimp_k(2) = 'vimp.out.2.0'
+
+  fileaimp_k(2) = 'aimp.out.2.0'
+
+
+&end
+
