@@ -1,0 +1,32 @@
+&input
+  Lambdah = 2.d0
+  txmean = 55.6d0
+  tymean= 55.6d0
+  tzmean= 55.6d0
+  txsurf= 2.0d0
+  tysurf= 2.0d0
+  tzsurf = 2.0d0
+  N_imp = 2
+  nthread = 20
+  title =  "Rb+_He2000"
+  n4 = 500
+  icurr = 0
+  iter0 = 0
+  time0 = 0
+  mode = 0
+  filedenin  = 'den.in'
+  filedenout = 'den.out'
+  nx = 288
+  ny = 288
+  nz = 288
+  xmax = 57.6d0
+  ymax = 57.6d0
+  zmax = 57.6d0
+  core4='OT'
+  lsolid=.true.
+  niter=99999999
+  pener=200
+  pdenpar=9999999
+  pcurr  = 2000
+  deltatps=5.0d-5
+/

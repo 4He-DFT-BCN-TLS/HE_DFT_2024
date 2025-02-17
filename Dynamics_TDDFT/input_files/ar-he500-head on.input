@@ -1,0 +1,29 @@
+&input
+  Lambdah = 2.d0
+  tzmean = 36.4d0
+  tzsurf = 2.d0
+  N_imp = 1
+  nthread = 20
+  title = '4He_500 + Ar'
+  n4 = 500
+  icurr = 0
+  iter0 = 0
+  time0 = 0
+  mode = 0
+  filedenin  = 'den.in'
+  filedenout = 'den.out'
+  fileimpin  = 'psix0.out'
+  fileimpout = 'psix1.out'
+  nx = 192
+  ny = 192
+  nz = 192
+  xmax = 38.4d0
+  ymax = 38.4d0
+  zmax = 38.4d0
+  core4='OT'
+  niter=99999999
+  pener=200
+  pdenpar=9999999
+  pcurr  = 2000
+  deltatps=5.d-4
+/
